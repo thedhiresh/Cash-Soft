@@ -9,3 +9,14 @@ export default defineConfig({
     babel({ presets: [reactCompilerPreset()] })
   ],
 })
+// installation of tailwindcss plugin for Vite to enable Tailwind CSS features in the project
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+export default defineConfig({
+  plugins: [
+    react(),
+    tailwindcss(),
+  ],
+})
